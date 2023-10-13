@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,500;1,200&display=swap');
+
+// RESET /////
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:$font-stack;
+
+    
+}
+
+
+.fixed {
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+
+    a {
+        img {}
+    }
+}
+
+

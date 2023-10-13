@@ -1,0 +1,382 @@
+.hero {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: linear-gradient(to left top, #0e12181a, #080b0c21, #0c0d0e2a, #0d0e0d2a, #15161333), url("../img/fondo5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10%;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    @include flex (flex, column, center,center);
+
+
+    p {
+        font-size: 60px;
+        color: $color-secundario;
+        font-size: 50px;
+        font-weight: 500;
+        padding: 10px;
+
+        a {
+            color: color-terciario;
+            font-size: 70px;
+            font-weight: 1000;
+            padding: 10px;
+        }
+
+    }
+
+}
+
+.productos {
+    text-align: center;
+    padding: 5px;
+
+    p {
+        font-size: 50px;
+        color: $color-secundario;
+        font-size: 20px;
+        font-weight: 300;
+        background-color: black;
+
+        a {
+            text-decoration: none;
+            color: $color-terciario;
+        }
+    }
+
+    h2 {
+        color: $color-secundario;
+        font-size: 60px;
+        font-weight: 500;
+        background-color: $color-principal;
+        text-align: center;
+    }
+
+    .productos-contenedor {
+        //display: flex;
+        //justify-content: space-between;
+        @include flex (flex, space-between, center,center);
+        flex-wrap: wrap;
+
+        div {
+            text-align: center;
+            margin: 10px;
+            display: inline-block;
+
+            img {
+                border: 3px solid $color-principal;
+                width: 310px;
+                height: 310px;
+                padding: 10px;
+            }
+
+            h3 {
+                color: black;
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(195, 92, 92);
+                background-color: $color-principal;
+            }
+        }
+
+    }
+}
+
+.hm {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 550px;
+
+    .hm-item {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            object-fit: cover;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            color: $color-terciario;
+            background-color: $color-principal;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: rgb(184, 98, 74);
+            }
+
+            ;
+        }
+    }
+}
+
+
+
+
+/*-------------MAIN HOMBRE--------------*/
+
+.contenido {
+    .menproducts {
+        text-align: center;
+        padding: 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        overflow: hidden;
+        grid-auto-rows: 250px;
+        gap: 50px;
+
+        .grid-men {
+            width: 250px;
+            height: 250px;
+            border: 3px solid rgb(67, 65, 65);
+            text-align: center;
+            margin: 10px;
+            gap: 15px;
+            position: relative;
+            -webkit-box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 20 px;
+                object-fit: cover;
+                transition: all 300ms;
+                position: relative;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+
+            h3 {
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.365);
+                width: 100%;
+                color: $color-secundario;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: nth($colores, 2);
+
+                }
+            }
+        }
+
+    }
+}
+
+//  MAIN NOSOTROS
+
+.carousel-all {
+    .carousel-item {
+        height: 65vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+
+    }
+}
+
+
+
+.identidad {
+    padding: 1rem 1rem;
+    max-width: 60%;
+    margin: 0 auto;
+    border: 2px solid grey;
+    text-align: center;
+
+
+
+    .identidad-container {
+
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 40px;
+
+        h2 {
+            color: white;
+            padding: 10px;
+        }
+
+        h3 {
+            color: white;
+            padding: 10px;
+        }
+
+        p {
+            color: black;
+            padding: 10x;
+            font-family: serif;
+            color: white;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: column;
+        }
+
+
+
+    }
+
+}
+
+
+
+form {
+
+    padding: 30px;
+    * {
+        box-sizing: border-box;
+    }
+    
+    .container {
+
+        padding: 16px;
+
+        h1 {}
+
+        p {}
+
+        label {
+            b {}
+
+        }
+
+        input {
+
+            &[type=text],
+            &[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+        }
+
+        label {}
+
+        input {
+
+            &[type=text]:focus,
+            &[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+        }
+
+        p {
+            a {
+                color: dodgerblue;
+            }
+        }
+
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+}
+
+
+// MAIN DESCUENTOS
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*-------- Se generan 3 columnas de 1fr CADA UNA------*/
+    grid-auto-rows: 250px;
+    /*--------PARA UNA GRILLA DINAMICA.  SE USA PARA QUE SE ADAPTE SOLO Y NO SE MUEVAN Y SE ROMPA------*/
+    gap: 40px;
+
+    .grid-item {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 0px 33px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            color: brown;
+            background-color: rgba(0, 0, 0, 0.507);
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .img-5 {
+            grid-column: span 2;
+        }
+
+    }
+}
