@@ -82,20 +82,20 @@
             }
 
             h3 {
-                color: rgba(0, 0, 0, 0.445);
+                color: white;
                 padding: 10px;
+                background-color: rgba(128, 128, 128, 0.74);
 
             }
 
             a {
                 text-decoration: none;
-                color: rgb(231, 231, 231);
-                background-color: $color-principal;
+                color: black;
                 font-size: 20px;
                 font-weight: 100;
 
                 &:hover {
-                    color: brown;
+                    color: burlywood;
 
                 }
             }
@@ -133,8 +133,8 @@
         h3 {
             position: absolute;
             bottom: 0;
-            color: $color-terciario;
-            background-color: rgba(0, 0, 0, 0.233);
+            color: $color-principal;
+            background-color: rgba(255, 255, 255, 0.808);
             width: 100%;
             padding: 5px;
             text-align: center;
@@ -146,7 +146,7 @@
                 transition: all 300ms;
 
                 &:hover {
-                    color: white;
+                    color: burlywood;
                 }
             }
 
@@ -164,11 +164,15 @@
     .menproducts {
         text-align: center;
         padding: 5px;
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
         overflow: hidden;
-        grid-auto-rows: 500px;
-        gap: 1px;
+        flex-wrap: wrap;
+
+
+
 
         .grid-men {
             width: 300px;
@@ -201,16 +205,28 @@
             h3 {
                 position: absolute;
                 bottom: 0;
-                background-color: rgba(0, 0, 0, 0.365);
+                font-size: 20px;
+                font-weight: 100;
+                background-color: rgba(255, 255, 255, 0.849);
                 width: 100%;
-                color: $color-secundario;
+                color: $color-principal;
                 text-align: center;
 
                 a {
                     text-decoration: none;
                     color: nth($colores, 2);
+                    transition: all 300ms;
+
+                &:hover {
+                    color: burlywood;
+                }
 
                 }
+            }
+            p{
+                margin-top: 20px;
+                margin-left: 0;
+                text-align: left;
             }
         }
 
@@ -407,6 +423,7 @@ form {
     gap: 40px;
 
     .grid-item {
+
         position: relative;
 
         img {
@@ -437,11 +454,34 @@ form {
             }
         }
 
+    }
+
+
+    .img-5 {
+        grid-column: span 2;
+    }
+
+}
+
+.productos-descuentos {
+    margin-top: 20px;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    text-align: center;
+
+    p {
+
+        font-size: 50px;
+        color: $color-secundario;
+        font-size: 17px;
+        font-weight: 300;
 
 
     }
 
-    .img-5 {
-        grid-column: span 2;
+    a {
+        text-decoration: none;
+        color: $color-terciario;
     }
 }

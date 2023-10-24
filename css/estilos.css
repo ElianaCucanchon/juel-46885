@@ -84,16 +84,16 @@ header div p {
         .productos .productos-contenedor div img:hover {
           transform: scale(1.15); }
       .productos .productos-contenedor div h3 {
-        color: rgba(0, 0, 0, 0.445);
-        padding: 10px; }
+        color: white;
+        padding: 10px;
+        background-color: rgba(128, 128, 128, 0.74); }
       .productos .productos-contenedor div a {
         text-decoration: none;
-        color: #e7e7e7;
-        background-color: #434141;
+        color: black;
         font-size: 20px;
         font-weight: 100; }
         .productos .productos-contenedor div a:hover {
-          color: brown; }
+          color: burlywood; }
 
 .hm {
   text-align: center;
@@ -115,8 +115,8 @@ header div p {
     .hm .hm-item h3 {
       position: absolute;
       bottom: 0;
-      color: bisque;
-      background-color: rgba(0, 0, 0, 0.233);
+      color: #434141;
+      background-color: rgba(255, 255, 255, 0.808);
       width: 100%;
       padding: 5px;
       text-align: center; }
@@ -125,17 +125,18 @@ header div p {
         color: #af4427;
         transition: all 300ms; }
         .hm .hm-item h3 a:hover {
-          color: white; }
+          color: burlywood; }
 
 /*-------------MAIN HOMBRE--------------*/
 .contenido .menproducts {
   text-align: center;
   padding: 5px;
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
   overflow: hidden;
-  grid-auto-rows: 500px;
-  gap: 1px; }
+  flex-wrap: wrap; }
   .contenido .menproducts .grid-men {
     width: 300px;
     height: 450px;
@@ -160,13 +161,22 @@ header div p {
     .contenido .menproducts .grid-men h3 {
       position: absolute;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.365);
+      font-size: 20px;
+      font-weight: 100;
+      background-color: rgba(255, 255, 255, 0.849);
       width: 100%;
-      color: white;
+      color: #434141;
       text-align: center; }
       .contenido .menproducts .grid-men h3 a {
         text-decoration: none;
-        color: brown; }
+        color: brown;
+        transition: all 300ms; }
+        .contenido .menproducts .grid-men h3 a:hover {
+          color: burlywood; }
+    .contenido .menproducts .grid-men p {
+      margin-top: 20px;
+      margin-left: 0;
+      text-align: left; }
 
 /*-------------NOSOTROS--------------*/
 .carousel-all {
@@ -292,24 +302,40 @@ form {
   .grid-galeria .img-5 {
     grid-column: span 2; }
 
+.productos-descuentos {
+  margin-top: 20px;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  text-align: center; }
+  .productos-descuentos p {
+    font-size: 50px;
+    color: white;
+    font-size: 17px;
+    font-weight: 300; }
+  .productos-descuentos a {
+    text-decoration: none;
+    color: bisque; }
+
 .footer {
   width: 100%;
   height: 50%;
   background-color: #434141; }
   .footer .grupo-1 {
     width: 100%;
-    max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 45px 0px; }
   .footer .box figure {
+    text-align: center;
     width: 50%;
     height: 100%;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-around;
+    flex-direction: row; }
     .footer .box figure a img {
       width: 200px; }
   .footer .box h2 {
@@ -342,3 +368,35 @@ form {
     color: white; }
     .footer .grupo-2 small {
       font-size: 15PX; }
+
+@media (max-width: 871px) {
+  .footer .grupo-1 {
+    width: 99%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 45px 30px;
+    flex-wrap: wrap; } }
+
+@media (max-width: 557px) {
+  .hero p {
+    font-size: 40px;
+    font-weight: 400; }
+  .hero a {
+    font-size: 50px;
+    font-weight: 800; } }
+
+@media (max-width: 447px) {
+  .hero p {
+    font-size: 30px;
+    font-weight: 300; }
+  .hero a {
+    font-size: 30px;
+    font-weight: 400; } }
+
+@media (max-width: 410px) {
+  .hero p {
+    font-size: 15px;
+    font-weight: 150; }
+  .hero a {
+    font-size: 20px;
+    font-weight: 100; } }

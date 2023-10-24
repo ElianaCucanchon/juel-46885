@@ -4,29 +4,31 @@
 
     background-color: $color-principal;
 
+   
+        
+
 
     .grupo-1 {
         width: 100%;
-        max-width: 1200px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         padding: 45px 0px;
 
-
-
-
     }
 
     .box {
 
         figure {
+            text-align: center;
             width: 50%;
             height: 100%;
-            display: flex;
-            justify-content: center;
             align-items: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            
 
             a {
                 img {
