@@ -29,8 +29,10 @@
             justify-content: space-around;
             flex-direction: row;
             
+            
 
-            a {
+            a { 
+               
                 img {
                     width: 200px;
 
@@ -40,6 +42,8 @@
         }
 
         h2 {
+            font-size: 23px;
+            font-weight: 100;
             color: $color-secundario;
             margin-bottom: 25px;
             font-size: 20px;
